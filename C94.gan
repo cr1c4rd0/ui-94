@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-09-14" view-index="0" gantt-divider-location="546" resource-divider-location="300" version="3.2.3247" locale="en_CO">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="212" order="0"/>
+        <field id="tpd4" name="Begin date" width="82" order="1"/>
+        <field id="tpd5" name="End date" width="85" order="2"/>
+        <field id="tpd13" name="Resources" width="166" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Filter DB IPs to only accept traffic from app web servers" color="#8cb6ce" meeting="false" start="2023-09-19" duration="2" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="1" name="Reemplazar credenciales de servidor de DB con variables de entorno en le servidor" color="#8cb6ce" meeting="false" start="2023-09-21" duration="2" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="POC: Migración SkillsDictionaries" color="#8cb6ce" meeting="false" start="2023-09-19" duration="2" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Add column with the user (email)" color="#8cb6ce" meeting="false" start="2023-09-19" duration="2" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Componente paginación: Lógica para la consulta" color="#8cb6ce" meeting="false" start="2023-09-21" duration="2" complete="0" thirdDate="2023-09-14" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Jeffry Garcia Perea" function="1" contacts="jgarcia@cafetosoftware.com" phone="3103942374"/>
+        <resource id="1" name="Samith Orozo Ordoñez" function="4" contacts="sorozco@cafetosoftware.com" phone="3004478580"/>
+        <resource id="2" name="Diego Cortes Chicaiza" function="2" contacts="dcortez@cafetosoftware.com" phone="3017304482"/>
+        <resource id="3" name="Rodrigo Gonzales Torres" function="3" contacts="rgonzalez@cafetosoftware.com" phone="3218252474"/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="1" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="3" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="QA"/>
+        <role id="2" name="Backend"/>
+        <role id="3" name="Frontend"/>
+        <role id="4" name="Devops"/>
+        <role id="5" name="UI Design"/>
+    </roles>
+</project>
